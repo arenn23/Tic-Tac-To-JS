@@ -77,16 +77,18 @@ const winningCombos = [
   [3, 5, 7],
 ];
 
-//Checks to see if player has 3 in row
+//Checks to see if player has won
 function checkWin(player) {
   var i, j, count;
-  //loops through each array in winning combos
+  //loops through each array in winningCombos object
   for (i = 0; i < winningCombos.length; i++) {
     //count starts at 0
     count = 0;
-    //loops through each value in each array in wincombos
+    //loops through each value in each array in the winningCombos object
     for (j = 0; j < winningCombos[i].length; j++) {
-      //If the player has a mark in the position of the winning combo array, then the counts goes up. Else, the loop breaks and the next array in winningCombos is looked at.
+      //The value at winningCombo[i][j] is obtained and placed into the board.
+      //If the board has a mark that equals that player`s mark at that location, the count goes up.
+      //Else, the loop breaks, and the next array in winningCombos is explored.
       if (board[winningCombos[i][j]] === player) {
         count++;
       }
@@ -145,4 +147,5 @@ function TICTACTOE(player) {
   });
 }
 
+//Starts game
 TICTACTOE("O");
