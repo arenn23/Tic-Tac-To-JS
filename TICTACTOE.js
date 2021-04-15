@@ -80,13 +80,13 @@ const winningCombos = [
 //Checks to see if player has 3 in row
 function checkWin(player) {
   var i, j, count;
-  //loops through each array in combos
+  //loops through each array in winning combos
   for (i = 0; i < winningCombos.length; i++) {
     //count starts at 0
     count = 0;
     //loops through each value in each array in wincombos
     for (j = 0; j < winningCombos[i].length; j++) {
-      //if the player has a mark on the board in one of the positions, the count goes up one. Else, the loop breaks and the count goes back to 0
+      //If the player has a mark in the position of the winning combo array, then the counts goes up. Else, the loop breaks and the next array in winningCombos is looked at.
       if (board[winningCombos[i][j]] === player) {
         count++;
       }
