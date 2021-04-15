@@ -13,3 +13,19 @@ var board = {
   8: " ",
   9: " ",
 };
+
+//Function that places a mark onto the board
+function markBoard(position, mark) {
+  board[position] = mark.toUpperCase();
+}
+
+//Create a game loop that prompts each player to make a move, takes a command line argument, and prints it back
+function TICTACTOE(player) {
+  console.log("Your turn player: " + player);
+  prompt.start();
+  prompt.get(["position"], function (err, result) {
+    console.log(`Player  ${player} + placed at  ${result.position}`);
+  });
+}
+
+TICTACTOE("X");
