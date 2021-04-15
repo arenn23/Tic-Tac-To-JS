@@ -1,0 +1,23 @@
+{
+  "name": "tic_tac_toe",
+  "version": "1.0.0",
+  "description": "tic_tac_toe in JavaScript",
+  "main": "TICTACTOE.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/arenn23/Tic-Tac-To-JS.git"
+  },
+  "author": "Alan Renner",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/arenn23/Tic-Tac-To-JS/issues"
+  },
+  "homepage": "https://github.com/arenn23/Tic-Tac-To-JS#readme",
+  "dependencies": {
+    "node": "^15.14.0",
+    "prompt": "^1.1.0"
+  }
+}
